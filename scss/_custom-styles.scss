@@ -1,0 +1,24 @@
+// Add additional styles here. For example, overwrite certain styles or add new components.
+// Tip: You can use bootstrap's powerful mixins here!
+
+
+// .alert-myalert {
+//  @include alert-variant(#60667d, #1d1d1d, #f4fdff);
+// }
+
+// @each $color, $value in $theme-colors {
+//  .alert-#{$color} {
+//    box-shadow: 3px 3px theme-color-level($color, -3);
+//  }
+// }
+
+
+.swatch-100{ background: $gray-100; }
+.swatch-200{ background: $gray-200; }
+.swatch-300{ background: $gray-300; }
+.swatch-400{ background: $gray-400; }
+.swatch-500{ background: $gray-500; }
+.swatch-600{ background: $gray-600; }
+.swatch-700{ background: $gray-700; }
+.swatch-800{ background: $gray-800; }
+.swatch-900{ background: $gray-900; }
