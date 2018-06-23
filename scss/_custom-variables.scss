@@ -31,14 +31,9 @@
 //  "cool": #4d3fa3
 // );
 
-$gray-900: #141417;
-$gray-800: #37373B;
-$gray-700: #55565a; //cool gray 11
-// $gray-600: 
-$gray-500: #a9aba9; //medium gray / cool gray 6
-$gray-400: #bec6c3; //light gray / Pantone 441
-// $gray-300:
-// $gray-200:
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 
 
 $red: #d22030;
@@ -50,16 +45,30 @@ $golden-yellow: #fdbf56;
 $iris: #5b4c93;
 $azure: #2ca5da;
 $beige: #d8d2c4;
-
+$cool-gray: #55565a; //cool gray 11
+$medium-gray: #a9aba9; //medium gray / cool gray 6
+$light-gray: #bec6c3; //light gray / Pantone 441
+$green: #54B500;
 
 $primary:       $red;
-// $secondary:     $gray-600 !default;
-// $success:       $green !default;
-$info:          $azure;
-$warning:       $iris;
-$danger:        $golden-yellow;
-// $light:         $gray-100;
-// $dark:          $gray-700; 
+$secondary:     $light-gray;
+$success:       $green;
+$info:          $sea-green;
+$danger:        $secondary-red;
+$warning:       $golden-yellow;
+$light:         $beige;
+$dark:          $cool-gray; 
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
 
 
 
