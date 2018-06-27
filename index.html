@@ -554,9 +554,9 @@
     <pre>
       <code>
         &lt;ul class=&quot;timeline&quot;&gt;
-          &lt;li class=&quot;timeline-item&quot;&gt;&lt;strong&gt;What&lt;/strong&gt; Lorem Ipsum Foobar&lt;/li&gt;
-          &lt;li class=&quot;timeline-item&quot;&gt;&lt;strong&gt;Thing&lt;/strong&gt; Another Thing thing &lt;br&gt;foo bar&lt;/li&gt; 
-          &lt;li class=&quot;timeline-item&quot;&gt;&lt;strong&gt;That&lt;/strong&gt; Metaphor Foo Thing&lt;/li&gt; 
+          &lt;li class=&quot;timeline-event&quot;&gt;&lt;strong&gt;What&lt;/strong&gt; Lorem Ipsum Foobar&lt;/li&gt;
+          &lt;li class=&quot;timeline-event&quot;&gt;&lt;strong&gt;Thing&lt;/strong&gt; Another Thing thing &lt;br&gt;foo bar&lt;/li&gt; 
+          &lt;li class=&quot;timeline-event&quot;&gt;&lt;strong&gt;That&lt;/strong&gt; Metaphor Foo Thing&lt;/li&gt; 
         &lt;/ul&gt;
       </code>
     </pre>
@@ -590,6 +590,14 @@
           </li>
           <li>
             <span class="badge badge-success">Parallel and Distributed Programming</span>
+          </li>
+
+          <li>
+            <span class="badge badge-outline-success">Web Development</span>
+          </li>
+
+          <li>
+            <span class="badge badge-outline-primary">Web Development</span>
           </li>
 
         </ul>
@@ -882,6 +890,117 @@
       </ul>
     </div>
   </div>
+  <hr><hr><hr><hr>
+  <br>
+  <div class="container">
+    <!-- 
+    dont use classes from bootstrap docs "color schemes" section (.navbar-light,.navbar-dark,.bg-light,.bg-dark,etc). Instead, you have 5 options:
+    1. For default (white bg) styling, use ony class of .navbar-metaphor.
+    2. For biege bg styling, use class of .navbar-metaphor and add a class of .navbar-metaphor--light
+    3. For dark-gray bg styling, use class of .navbar-metaphor and add a class of .navbar-metaphor--dark   
+    4. For black bg styling, use class of .navbar-metaphor and add a class of .navbar-metaphor--black   
+    -->
+
+
+<!--     <nav class="navbar navbar-metaphor">
+      <a class="navbar-brand" href="#">
+        <span class="sr-only">CSUN Logo</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup98" aria-controls="navbarNavAltMarkup98" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup98">
+        <div class="navbar-nav text-center">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+        </div>
+      </div>
+    </nav> -->
+
+
+    <nav class="navbar navbar-metaphor navbar-expand-sm">
+      <a class="navbar-brand" href="#">
+        <span class="sr-only">CSUN Logo</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav text-center">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-metaphor navbar-metaphor--light navbar-expand-md">
+      <a class="navbar-brand" href="#">
+        <span class="sr-only">CSUN Logo</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup2" aria-controls="navbarNavAltMarkup2" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup2">
+        <div class="navbar-nav text-center">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-metaphor navbar-metaphor--dark navbar-expand-lg">
+      <a class="navbar-brand" href="#">
+        <span class="sr-only">CSUN Logo</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup3" aria-controls="navbarNavAltMarkup3" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup3">
+        <div class="navbar-nav text-center">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-metaphor navbar-metaphor--black navbar-expand-xl">
+      <a class="navbar-brand" href="#">
+        <span class="sr-only">CSUN Logo</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup4" aria-controls="navbarNavAltMarkup4" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup4">
+        <div class="navbar-nav text-center">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+        </div>
+      </div>
+    </nav>
+
+<!--     <nav class="navbar navbar-metaphor navbar-metaphor--black navbar-expand">
+      <a class="navbar-brand" href="#">
+        <span class="sr-only">CSUN Logo</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup5" aria-controls="navbarNavAltMarkup5" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup5">
+        <div class="navbar-nav text-center">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+        </div>
+      </div>
+    </nav> -->
+
+  </div>
+
   <hr><hr><hr><hr>
 
 
