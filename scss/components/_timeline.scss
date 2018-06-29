@@ -1,0 +1,36 @@
+.timeline {
+	list-style: none;
+	padding-left: 15px;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	border-left: 1px solid $primary;
+
+	&-header,
+	&-event {
+		position: relative;
+		margin: .5rem 0;
+
+		&:before {
+			content: " ";
+			position: absolute;
+			top: 50%;
+			left: -21px;
+			width: 11px;
+			height: 11px;
+			transform: translateY(-50%);
+			border: 2px solid $primary;
+			border-radius: 11px;
+			background: $white;
+		}
+	}
+
+	&-event {
+		&:before {
+			left: -19px;
+			width: 7px;
+			height: 7px;
+			border: none;
+			background: $primary;
+		}	
+	}
+}
