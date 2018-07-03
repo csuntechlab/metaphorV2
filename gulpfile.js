@@ -7,7 +7,7 @@ var gulp  = require('gulp'),
   autoprefixer = require('autoprefixer');
 
 gulp.task('build-theme', function() {
-  return gulp.src(['scss/*.scss'])
+  return gulp.src(['scss/*.scss','scss/*/*.scss'])
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([ autoprefixer({ browsers: [
@@ -28,7 +28,7 @@ gulp.task('build-theme', function() {
 });
 
 gulp.task('watch', ['build-theme'], function() {
-  gulp.watch(['scss/*.scss'], ['build-theme']);
+  gulp.watch(['scss/*.scss','scss/*/*.scss'], ['build-theme']);
 });
 
 gulp.task('default', ['build-theme'], function() {

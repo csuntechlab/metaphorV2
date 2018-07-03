@@ -1,6 +1,6 @@
 
 
-.nav--branded {
+.nav-metaphor {
 	border-bottom: 1px solid $light;
 	
 	.nav-item {
@@ -20,9 +20,9 @@
 			border-bottom-color: $black;
 		}
 	}
-}
+} 
 
-.nav--branded.flex-column {
+.nav-metaphor.flex-column {
 	border-bottom: 0 none;
 	border-left: 1px solid $light;
 
@@ -50,7 +50,7 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    .nav--branded.flex#{$infix}-column { 
+    .nav-metaphor.flex#{$infix}-column { 
 		border-bottom: 0 none;
 		border-left: 1px solid $light;
 
@@ -81,7 +81,7 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    .nav--branded.flex-column.flex#{$infix}-row { 
+    .nav-metaphor.flex-column.flex#{$infix}-row { 
 		border-left: 0 none;
 		border-bottom: 1px solid $light;
 
