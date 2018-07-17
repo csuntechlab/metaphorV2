@@ -35,6 +35,7 @@
 // $font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $font-family-sans-serif: ATCOverlook, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-display: FSLola, ATCOverlook, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $red: #d22030;
 $cinnabar: #e64b36;
@@ -48,7 +49,7 @@ $beige: #d8d2c4;
 $cool-gray: #55565a; //cool gray 11
 $medium-gray: #a9aba9; //medium gray / cool gray 6
 $light-gray: #bec6c3; //light gray / Pantone 441
-$green: #54B500;
+$green: #4fAf47;
 
 $primary:       $red;
 $secondary:     $light-gray;
@@ -56,7 +57,7 @@ $success:       $green;
 $info:          $sea-green;
 $danger:        $secondary-red;
 $warning:       $golden-yellow;
-$light:         $beige;
+// $light:         $beige;
 $dark:          $cool-gray; 
 
 $theme-colors: (
@@ -66,7 +67,7 @@ $theme-colors: (
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
-  "light":      $light,
+  // "light":      $light,
   "dark":       $dark
 );
 
