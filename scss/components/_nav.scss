@@ -1,7 +1,9 @@
-
-
 .nav-metaphor {
 	border-bottom: 1px solid $light;
+	
+	a {
+		text-decoration: none;
+	}
 	
 	.nav-item {
 		margin-bottom: -1px;

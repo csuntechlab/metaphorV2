@@ -8,6 +8,10 @@
 
   <!-- Custom built theme - This already includes Bootstrap 4 -->
   <link rel="stylesheet" href="css/metaphor-v2.min.css">
+
+  <link rel="preload" href="fonts/ATCOverlook-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <script defer src="/js/fontawesome/all.js"></script>
 </head>
 <body>
   <div class="container">
@@ -71,7 +75,7 @@
       </div>
     </div>
 
-    <div class="alert alert-light">
+    <div class="alert alert-secondary">
       <pre>
         <code>
           //timeline (default)
@@ -217,7 +221,7 @@
     </nav> -->
 
 
-    <div class="alert alert-light mt-4">
+    <div class="alert alert-secondary mt-4">
       <pre>
         <code>
           &lt;nav class=&quot;navbar navbar-metaphor navbar-metaphor--light navbar-expand-sm&quot;&gt; 
@@ -394,7 +398,7 @@
       </div>
     </div>
 
-    <div class="alert alert-light mt-4">
+    <div class="alert alert-secondary mt-4">
       <pre>
         <code>
           //column nav with nav-pills
@@ -734,7 +738,7 @@
     </div> -->
 
 
-    <div class="alert alert-light">
+    <div class="alert alert-secondary">
       <pre>
         <code>
           &lt;div class=&quot;rise-arrow&quot;&gt;
@@ -787,7 +791,7 @@
           <li>
             <span class="badge badge-outline-primary">Programming Languages</span>
           </li>
-          <li>
+          <li class="bg-primary p-1 mt-1 mb-1">
             <span class="badge badge-outline-secondary">Parallel and Distributed Programming</span>
           </li>
           <li>
@@ -796,7 +800,7 @@
           <li>
             <span class="badge badge-outline-warning">Metaphor</span>
           </li>
-          <li>
+          <li class="bg-dark p-1 mt-1 mb-1">
             <span class="badge badge-outline-light">Light Badge</span>
           </li>
           <li>
@@ -823,7 +827,7 @@
 
     </div>
 
-    <div class="alert alert-light mt-4">
+    <div class="alert alert-secondary mt-4">
       <pre>
         <code>
           //badge default
@@ -856,16 +860,94 @@
   </div>
 
   <hr><hr><hr><hr>
+  <div class="container">
+    <h3>Fonts</h3>
+    <p>Metaphor uses the following fonts:</p>
+    <ul>
+      <li>ATCOverlook - Regular</li>
+      <li><em>ATCOverlook - Regular Italic</em></li>
+      <li><strong>ATCOverlook - Bold</strong></li>
+      <li><strong><em>ATCOverlook - Bold Italic</em></strong></li>
+      <li><span class="fontDisplay">FSLola - Bold</span></li>
+    </ul>
+    <p>Please add the following line of code to the &lt;head&gt; of your document to improve loading times:</p>
+
+    <div class="alert alert-secondary mt-4">
+      <pre>
+        <code>
+          &lt;link rel=&quot;preload&quot; href=&quot;fonts/ATCOverlook-Regular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</code></pre>
+    </div> 
+    <p>ATCOverlook is the default font. You can make use of it's variants with the &lt;strong&gt;, &lt;b&gt;, &lt;em&gt;, and &lt;i&gt; tags in your markup, or by using <strong class="bg-info">font-weight:700</strong> or <strong class="bg-info">font-weight:bold</strong> or <strong class="bg-info">font-style:italic</strong> in your CSS.</p>
+    <p>To use <span class="fontDisplay">FSLola Bold</span>, add a class of <strong class="bg-info">.fontDisplay</strong> in your markup, or utilize the variable <strong class="bg-info">$font-family-display</strong> in your Sass files.     
+  </div>
+
+
+  <hr><hr><hr><hr>
+  <div class="container">
+    <h3>Icon Library - Font Awesome</h3>
+
+    <p>Utilize the font awesome icon library by adding the following &lt;script&gt; to the &lt;head&gt; of your document:</p>
+
+    <div class="alert alert-secondary mt-4">
+      <pre>
+        <code>
+          &lt;script defer src=&quot;/js/fontawesome/all.js&quot;&gt;&lt;/script&gt;</code></pre>
+    </div>
+    <p>Alternatively, if working in Vue.js, you may <a href="https://fontawesome.com/how-to-use/on-the-web/using-with/vuejs" target="fontawesome">utilize the official Font Awesome Vue.js component</a>. The advantage of this method? "Explicitly selecting icons offers the advantage of only bundling the icons that you use in your final bundled file. This allows us to subset Font Awesome's thousands of icons to just the small number that are normally used".</p>
+
+    <p>After installing font awesome, you have access to most <a href="https://fontawesome.com/icons?d=gallery&s=solid&m=free" target="fontawesome">solid icons</a>, <a href="https://fontawesome.com/icons?d=gallery&s=regular&m=free" target="fontawesome">regular icons</a>  and <a href="https://fontawesome.com/icons?d=gallery&s=brands&m=free" target="fontawesome">brand icons</a> (you are limited to only the free icons). You can easily place icons on your site and modify their <a href="https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons" target="fontawesome">size</a>, <a href="https://fontawesome.com/how-to-use/on-the-web/styling/animating-icons" target="fontawesome">animate</a> them, <a href="https://fontawesome.com/how-to-use/on-the-web/styling/rotating-icons" target="fontawesome">flip/rotate</a> them, and more. Please see the <a href="https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use" target="fontawesome">font awesome documentation</a> for more information.  </p>
+
+
+    <div>
+      <i class="fas fa-user"></i>
+      <i class="far fa-user"></i>
+      <i class="fab fa-facebook fa-2x"></i>
+      <i class="fas fa-user fa-3x fa-flip-vertical"></i>
+    </div>
+    <div>
+      <i class="fas fa-3x fa-spinner fa-spin"></i>
+      <span class="fa-3x">
+        <span class="fa-layers fa-fw">
+          <i class="fas fa-calendar"></i>
+          <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3" style="font-weight:900">27</span>
+        </span>
+      </span>
+      <span>
+        <span class="fa-stack fa-2x">
+          <i class="fas fa-camera fa-stack-1x"></i>
+          <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
+        </span>
+      </span>
+    </div>
+
+    <div>
+      <ul class="fa-ul">
+        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>List icons can</li>
+        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
+        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
+        <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
+      </ul>
+    </div>
+
+    <div class="alert alert-secondary mt-4">
+      <pre>
+        <code>
+        &lt;i class=&quot;fas fa-user&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;far fa-user&quot;&gt;&lt;/i&gt;
+        &lt;i class=&quot;fab fa-facebook&quot;&gt;&lt;/i&gt;</code></pre>
+    </div>
+
+  </div>
+
+  <hr><hr><hr><hr>
 
   <div class="container">
     <h3>To Do:</h3>
     <ul>
-      <li>Add icon set (probably font awesome)</li>
       <li>Add date-picker plugin</li>
       <li>
-        Typography (waiting on Kimon)
+        Typography
         <ul>
-          <li>possibly change fonts to CSUN official fonts</li>
           <li>add heading and sub-heading classes</li>
         </ul>
       </li>

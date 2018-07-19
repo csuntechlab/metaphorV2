@@ -2,6 +2,10 @@ html {
 	font-size: 15px;
 }
 
-// body {
-// 	font-family: ATCOverlook;
-// }
+a {
+	text-decoration: underline;
+}
+
+.fontDisplay {
+	font-family: $font-family-display;
+}
