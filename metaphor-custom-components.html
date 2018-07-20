@@ -942,9 +942,18 @@
   <hr><hr><hr><hr>
 
   <div class="container">
+    <h3>Datepicker</h3>
+    <div class="form-group">
+      <label for="date1">Chose a Date:</label>
+      <input class="date form-control" id="date1" type="text" placeholder="mm/dd/yy" title="format: mm/dd/yy"/>
+    </div>
+  </div>
+
+  <hr><hr><hr><hr>
+
+  <div class="container">
     <h3>To Do:</h3>
     <ul>
-      <li>Add date-picker plugin</li>
       <li>
         Typography
         <ul>
@@ -966,9 +975,22 @@
 </div>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ --><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<script src="/js/datepicker/datepicker.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.date').datepicker({
+    // modal: true
+    // theme: 'bootstrap'
+
+  });
+});
+</script>
 
 </body>
 </html>
