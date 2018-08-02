@@ -34,9 +34,6 @@
 // @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 // $font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-$font-family-sans-serif: ATCOverlook, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-display: FSLola, ATCOverlook, "Helvetica Neue", Helvetica, Arial, sans-serif;
-
 $red: #d22030;
 $cinnabar: #e64b36;
 $secondary-red: $cinnabar;
@@ -49,6 +46,7 @@ $beige: #d8d2c4;
 $cool-gray: #55565a; //cool gray 11
 $medium-gray: #a9aba9; //medium gray / cool gray 6
 $light-gray: #bec6c3; //light gray / Pantone 441
+$dark-gray: #3d454d; //decided on by Tiffany and Andrew
 $green: #4fAf47;
 
 $primary:       $red;
@@ -58,7 +56,7 @@ $info:          $sea-green;
 $danger:        $secondary-red;
 $warning:       $golden-yellow;
 // $light:         $beige;
-$dark:          $cool-gray; 
+$dark:          $dark-gray;
 
 $theme-colors: (
   "primary":    $primary,
@@ -71,6 +69,27 @@ $theme-colors: (
   "dark":       $dark
 );
 
+$body-color: $cool-gray;
+
+$text-muted: #adb5bd; //same as $gray-500
+
+$font-family-sans-serif: ATCOverlook, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-display: FSLola, ATCOverlook, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-size-base:              1.6rem;
+
+$headings-font-weight:        700;
+$headings-color:              $dark;
 
 
+$border-radius:               .4rem !default;
+$border-radius-lg:            .45rem !default;
+$border-radius-sm:            .35rem !default;
 
+
+// $h1-font-size: $font-size-base * 2.8125;
+// $h2-font-size: $font-size-base * 2.1875;
+// $h3-font-size: $font-size-base * 1.875;
+// $h4-font-size: $font-size-base * 1.5;
+// $h5-font-size: $font-size-base * 1.25;
+// $h6-font-size: $font-size-base;

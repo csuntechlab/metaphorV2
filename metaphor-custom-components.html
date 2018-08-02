@@ -15,6 +15,69 @@
 </head>
 <body>
   <div class="container">
+      <h3>Fonts &amp; Typography</h3>
+      <p>Metaphor uses the following fonts:</p>
+      <ul>
+        <li>ATCOverlook - Regular</li>
+        <li><em>ATCOverlook - Regular Italic</em></li>
+        <li><strong>ATCOverlook - Bold</strong></li>
+        <li><strong><em>ATCOverlook - Bold Italic</em></strong></li>
+        <li><span class="font-display">FSLola - Bold</span></li>
+      </ul>
+      <p>Please add the following line of code to the &lt;head&gt; of your document to improve loading times:</p>
+  
+      <div class="alert alert-secondary mt-4">
+        <pre>
+          <code>
+            &lt;link rel=&quot;preload&quot; href=&quot;fonts/ATCOverlook-Regular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</code></pre>
+      </div> 
+      <p>ATCOverlook is the default font. You can make use of it's variants with the &lt;strong&gt;, &lt;b&gt;, &lt;em&gt;, and &lt;i&gt; tags in your markup, or by using <strong class="bg-info">font-weight:700</strong> or <strong class="bg-info">font-weight:bold</strong> or <strong class="bg-info">font-style:italic</strong> in your CSS or use the bootstrap-built-in classes <strong class="bg-info">.font-weight-bold</strong> and <strong class="bg-info">.font-italic</strong>.</p>
+      <p>To use <span class="font-display">FSLola Bold</span>, add a class of <strong class="bg-info">.font-display</strong> in your markup, or utilize the variable <strong class="bg-info">$font-family-display</strong> in your Sass files.     
+      
+      <br><br><br><br>
+
+      <div class="bg-dark">
+        <span class="h1 text-white">Someone's Name</span>&nbsp;&nbsp;
+        <div>
+          <span class="text-uppercase text-primary h5">Professor</span> <span class="text-white h5">| Computer Science</span>
+            
+        </div>
+        <div class="h5 font-weight-normal text-white">Faculty Director - META+LAB</div>
+      </div>
+      <br>
+      <div>
+        <span class="h3 text-primary">Overview</span>&nbsp;&nbsp;
+        <span class="h3">Overview</span>
+      </div>
+      <br>
+      <div class="h5 text-uppercase">
+        Contact &nbsp;Degrees &nbsp;Interests &nbsp;Past &nbsp;Courses
+      </div>
+      <!-- <div class="h5 text-uppercase font-display">
+          Contact &nbsp;Degrees &nbsp;Interests &nbsp;Past &nbsp;Courses
+      </div> -->
+      <br>
+      <div class="font-display h5">
+        Fall 2018 &nbsp;&nbsp; Spring 2017
+      </div>
+  
+      <hr class="hr-metaphor">
+      <hr class="hr-metaphor w-75 mr-0">
+      <hr class="hr-metaphor w-50 mr-0">
+      <hr class="hr-metaphor w-25 mr-0">
+      <hr class="hr-metaphor w-75">
+      <hr class="hr-metaphor w-50">
+      <hr class="hr-metaphor w-25">
+      <hr class="hr-metaphor w-75 ml-0">
+      <hr class="hr-metaphor w-50 ml-0">
+      <hr class="hr-metaphor w-25 ml-0">
+
+    </div>
+  
+  
+    <hr><hr><hr><hr>
+  
+  <div class="container">    
     <h3>Timeline</h3>
     <p>By default, the dots associated with each timeline item are centered. If you want the dots to be top-aligned, you can add a modifier class of <strong class="bg-info">.timeline--align-top</strong> to the parent &lt;ul&gt;. You can also override the dot alignment of any individual item by adding the following modifier classes to the &lt;ul&gt; element:
     </p>
@@ -860,29 +923,7 @@
   </div>
 
   <hr><hr><hr><hr>
-  <div class="container">
-    <h3>Fonts</h3>
-    <p>Metaphor uses the following fonts:</p>
-    <ul>
-      <li>ATCOverlook - Regular</li>
-      <li><em>ATCOverlook - Regular Italic</em></li>
-      <li><strong>ATCOverlook - Bold</strong></li>
-      <li><strong><em>ATCOverlook - Bold Italic</em></strong></li>
-      <li><span class="fontDisplay">FSLola - Bold</span></li>
-    </ul>
-    <p>Please add the following line of code to the &lt;head&gt; of your document to improve loading times:</p>
 
-    <div class="alert alert-secondary mt-4">
-      <pre>
-        <code>
-          &lt;link rel=&quot;preload&quot; href=&quot;fonts/ATCOverlook-Regular.woff2&quot; as=&quot;font&quot; type=&quot;font/woff2&quot; crossorigin&gt;</code></pre>
-    </div> 
-    <p>ATCOverlook is the default font. You can make use of it's variants with the &lt;strong&gt;, &lt;b&gt;, &lt;em&gt;, and &lt;i&gt; tags in your markup, or by using <strong class="bg-info">font-weight:700</strong> or <strong class="bg-info">font-weight:bold</strong> or <strong class="bg-info">font-style:italic</strong> in your CSS.</p>
-    <p>To use <span class="fontDisplay">FSLola Bold</span>, add a class of <strong class="bg-info">.fontDisplay</strong> in your markup, or utilize the variable <strong class="bg-info">$font-family-display</strong> in your Sass files.     
-  </div>
-
-
-  <hr><hr><hr><hr>
   <div class="container">
     <h3>Icon Library - Font Awesome</h3>
 
