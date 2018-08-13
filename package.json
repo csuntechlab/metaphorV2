@@ -1,6 +1,6 @@
 {
-  "name": "MetaphorV2",
-  "version": "1.0.0",
+  "name": "metaphor-theme",
+  "version": "2.0.0",
   "description": "CSUN-branded Bootstrap 4 theme",
   "repository": "https://github.com/HackerThemes/theme-kit",
   "main": "index.js",
