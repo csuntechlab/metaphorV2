@@ -1,39 +1,3 @@
-// Overwrite Bootstrap's variables here
-// You can find them in node_modules/bootstrap/scss/_variables.scss
-// Copy the variables you need into this file, don't modify files under node_modules/
-
-// Some example variables that you can uncomment:
-
-// Enabling shadows and gradients
-//$enable-shadows: true;
-// $enable-gradients: true;
-
-// Changing the body background and text
-// $body-bg: #d3e9eb;
-// $body-color: #151417;
-
-// Changing the border radius of buttons
-// $border-radius: 15px;
-
-// Changing the theme colors
-// $primary: #202f41;
-// $secondary: #436296;
-// $success: #2bc550;
-// $info: #495dff;
-// $warning: #ef8143;
-// $danger: #ff293a;
-// $light: #dfe6ee;
-// $dark: #0f1319;
-
-
-// Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
-// $theme-colors: (
-//  "cool": #4d3fa3
-// );
-
-// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-// $font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
 $red: #d22030;
 $cinnabar: #e64b36;
 $secondary-red: $cinnabar;
@@ -86,10 +50,3 @@ $border-radius:               .4rem !default;
 $border-radius-lg:            .45rem !default;
 $border-radius-sm:            .35rem !default;
 
-
-// $h1-font-size: $font-size-base * 2.8125;
-// $h2-font-size: $font-size-base * 2.1875;
-// $h3-font-size: $font-size-base * 1.875;
-// $h4-font-size: $font-size-base * 1.5;
-// $h5-font-size: $font-size-base * 1.25;
-// $h6-font-size: $font-size-base;
