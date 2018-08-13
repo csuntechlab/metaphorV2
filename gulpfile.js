@@ -4,10 +4,11 @@ var gulp  = require('gulp'),
   cleanCss = require('gulp-clean-css'),
   rename = require('gulp-rename'),
   postcss      = require('gulp-postcss'),
+  uglify = require("gulp-uglify");
   autoprefixer = require('autoprefixer');
 
 gulp.task('build-theme', function() {
-  return gulp.src(['scss/*.scss','scss/*/*.scss'])
+  return gulp.src(['src/scss/*.scss','src/scss/*/*.scss'])
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([ autoprefixer({ browsers: [
@@ -21,14 +22,20 @@ gulp.task('build-theme', function() {
       'Android >= 4',
       'Opera >= 12']})]))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('css/'))
+    .pipe(gulp.dest('dist/css/'))
     .pipe(cleanCss())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('css/'))
+    .pipe(gulp.dest('dist/css/'))
+});
+
+gulp.task('minify-js', function () {
+  gulp.src(['src/js/*.js','src/js/*/*.js']) // path to your files
+  .pipe(uglify())
+  .pipe(gulp.dest('dist/js/'));
 });
 
 gulp.task('watch', ['build-theme'], function() {
-  gulp.watch(['scss/*.scss','scss/*/*.scss'], ['build-theme']);
+  gulp.watch(['src/scss/*.scss','src/scss/*/*.scss'], ['build-theme']);
 });
 
 gulp.task('default', ['build-theme'], function() {
