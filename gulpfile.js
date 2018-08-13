@@ -34,11 +34,11 @@ gulp.task('minify-js', function () {
   .pipe(gulp.dest('dist/js/'));
 });
 
-gulp.task('watch', ['build-theme'], function() {
-  gulp.watch(['src/scss/*.scss','src/scss/*/*.scss'], ['build-theme']);
+gulp.task('watch', ['build-theme','minify-js'], function() {
+  gulp.watch(['src/scss/*.scss','src/scss/*/*.scss','src/js/*.js','src/js/*/*.js'], ['build-theme','minify-js']);
 });
 
-gulp.task('default', ['build-theme'], function() {
+gulp.task('default', ['build-theme','minify-js'], function() {
 });
 
 
