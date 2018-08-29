@@ -1,4 +1,4 @@
-# Documentation
+# Documentation 
 
 ## Fonts & Typography
 
@@ -536,6 +536,10 @@ A central graphic element around the CSUN concept is the Rise Arrow. This arrow 
 
     <div class="rise-arrow">
     </div>
+
+## Horizontal Line
+
+Add a class of .hr-metaphor to an &lt;hr&gt; element
 
 ## Badges
 
