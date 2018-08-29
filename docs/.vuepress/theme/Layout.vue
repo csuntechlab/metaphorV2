@@ -1,4 +1,5 @@
 <template>
+  
   <div
     class="theme-container"
     :class="pageClasses"
@@ -21,6 +22,7 @@
         <Sidebar
           :items="sidebarItems"
           @toggle-sidebar="toggleSidebar"
+          v-if="shouldShowSidebar"
         >
           <slot
             name="sidebar-top"
@@ -57,32 +59,30 @@
         </div>
     </div>
 
-    <!-- footer goes here -->
-
+    <Footer></Footer>
 
     <SWUpdatePopup :updateEvent="swUpdateEvent"/>
-  
-  
-  
+
   </div>
 </template>
 
-
 <script>
 
-
 import Bootstrap from 'bootstrap';
+import FontAwesome from '@fortawesome/fontawesome-free/js/all.js';
+// import '../../../dist/js/datepicker/datepicker.js';
 import Vue from 'vue'
 import nprogress from 'nprogress'
 import Home from './Home.vue'
 import Navbar from './Navbar.vue'
 import Page from './Page.vue'
 import Sidebar from './Sidebar.vue'
+import Footer from './Footer.vue'
 import SWUpdatePopup from './SWUpdatePopup.vue'
 import { resolveSidebarItems } from './util'
 
 export default {
-  components: { Home, Page, Sidebar, Navbar, SWUpdatePopup },
+  components: { Home, Page, Sidebar, Navbar, SWUpdatePopup, Footer, FontAwesome },
 
   data () {
     return {
@@ -142,6 +142,13 @@ export default {
   },
 
   mounted () {
+
+    $('.date').datepicker();
+
+    $('#myAlert').on('closed.bs.alert', function () {
+      console.log("closed");
+    })
+
     window.addEventListener('scroll', this.onScroll)
 
     // configure progress bar

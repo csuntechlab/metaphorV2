@@ -47,8 +47,7 @@
     <div class="alert alert-secondary">
       <pre class="mt-3 text-center"><code>$ npm install metaphor-theme --save</code></pre>
     </div>
-
-    
+  
 
     <div
       class="footer"
