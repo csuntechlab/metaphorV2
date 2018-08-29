@@ -68,7 +68,7 @@
 
 <script>
 
-import Bootstrap from 'bootstrap';
+// import Bootstrap from 'bootstrap';
 import FontAwesome from '@fortawesome/fontawesome-free/js/all.js';
 // import '../../../dist/js/datepicker/datepicker.js';
 import Vue from 'vue'
