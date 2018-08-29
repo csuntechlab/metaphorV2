@@ -44,17 +44,21 @@
 .sidebar > ul
   // font-size 15px
   // background-color #fff
-  // width $sidebarWidth
+  width $sidebarWidth
   position fixed
   z-index 10
-  margin 0
+  // margin 0
   top $navbarHeight
   left 0
   bottom 0
-  // box-sizing border-box
+  box-sizing border-box
   border-right 1px solid $borderColor
   overflow-y auto
   padding-top 2rem
+
+.sidebar > ul.nav-metaphor {
+  border-left: 0 none;
+}
 
 .content:not(.custom)
   // @extend $wrapper
@@ -105,30 +109,35 @@ strong
   font-weight 600
 
 h1, h2, h3, h4, h5, h6
-  font-weight 600
-  line-height 1.25
+  // font-weight 600
+  // line-height 1.25
   .content:not(.custom) > &
-    margin-top (0.5rem - $navbarHeight)
-    padding-top ($navbarHeight + 1rem)
-    margin-bottom 0
+    // margin-top (0.5rem - $navbarHeight)
+    // padding-top ($navbarHeight + 1rem)
+    margin-top 4rem
+    margin-bottom 2rem
     &:first-child
-      margin-top -1.5rem
-      margin-bottom 1rem
+      // margin-top -1.5rem
+      margin-bottom 3rem
+      border-bottom: 1px solid #eaecef
       + p, + pre, + .custom-block
         margin-top 2rem
   &:hover .header-anchor
     opacity: 1
 
-h1
-  font-size 2.2rem
+h1 
+  color #d22030
 
-h2
-  font-size 1.65rem
-  padding-bottom .3rem
-  border-bottom 1px solid $borderColor
+// h1
+//   font-size 2.2rem
 
-h3
-  font-size 1.35rem
+// h2
+//   font-size 1.65rem
+//   padding-bottom .3rem
+//   border-bottom 1px solid $borderColor
+
+// h3
+//   font-size 1.35rem
 
 a.header-anchor
   font-size 0.85em
@@ -143,8 +152,8 @@ a.header-anchor
 code, kbd, .line-number
   font-family source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
 
-p, ul, ol
-  line-height 1.7
+// p, ul, ol
+//   line-height 1.7
 
 hr
   border 0
@@ -180,6 +189,11 @@ th, td
       top 0
     .custom-layout
       padding-top 0
+
+.footer-metaphor 
+  background white
+  z-index 15
+  position relative
 
 
 @media (min-width: ($MQMobile + 1px))

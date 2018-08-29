@@ -1,8 +1,8 @@
 <template>
   <!-- sidebar -->
-  <div class="col-md-2 d-sm-none d-md-block sidebar">
+  <div class="col-md-2 d-sm-none d-md-flex sidebar">
     <slot name="top"/>
-    <ul class="nav flex-column nav-metaphor" v-if="items.length">
+    <ul class="nav flex-column nav-metaphor flex-nowrap" v-if="items.length">
       <li class="nav-item" v-for="(item, i) in items" :key="i">
         <SidebarGroup
           v-if="item.type === 'group'"

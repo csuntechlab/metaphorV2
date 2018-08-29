@@ -18,7 +18,6 @@ module.exports = {
         sidebar: [
             ['/', 'Home'],
             ['/documentation/', 'Documentation']
-        ],
-        displayAllHeaders: true         
+        ] 
     }
 }

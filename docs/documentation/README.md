@@ -386,9 +386,147 @@ You can add a class of <strong class="bg-info">.nav-pills</strong> to the parent
         <li class="nav-item flex-fill text-center"> <a class="nav-link" href="">Link</a> </li> 
     </ul>
 
+## Footer
+
+A CSUN and META+LAB branded footer component.
+
+<footer class="footer-metaphor">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-5">
+        <div class="row mb-3 mb-md-0">
+          <div class="col-12 col-md-3">
+              <img class="d-block mx-auto mx-md-0 img-fluid footer-metaphor__emblem mb-3 mb-md-0" src="//s3-us-west-2.amazonaws.com/csun-metalab/metaphor/dist/img/csun-emblem.svg" alt="CSUN Emblem">
+          </div>
+          <div class="col-12 col-md-9">
+            <h6>META+LAB </h6>
+            <div>
+              &copy; California State University, Northridge <br> 
+              18111 Nordhoff Street, Northridge, CA 91330 <br>
+              Phone: <a href="#">(818) 677-1200</a> / <a href="//www.csun.edu/contact" target="csun">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-7">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="mb-2 mb-lg-1">
+              <a href="//www.csun.edu/emergency/" target="csun">Emergency Information</a>
+            </div>
+            <div  class="mb-2 mb-lg-1">
+              <a href="//www.csun.edu/afvp/university-policies-procedures/"  target="csun">University Policies & Procedures</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 pl-0">
+            <div class="mb-2 mb-lg-1">
+              <a href="//www.csun.edu/sites/default/files/900-12.pdf" target="csun">Terms and Conditions for Use</a>
+            </div>
+            <div class="mb-2 mb-lg-1">
+              <a href="//www.csun.edu/sites/default/files/500-8025.pdf" target="csun">Privacy Policy</a>  
+            </div>
+            <div class="mb-2 mb-lg-1">
+              <a href="//www.csun.edu/it/document-viewers" target="csun">Document Reader</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 px-0">
+            <div>
+              <a href="//www2.calstate.edu" target="csun">California State University</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-metaphor__subfooter mt-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-2">
+                  <img class="footer-metaphor__logo mb-3" src="//s3-us-west-2.amazonaws.com/csun-metalab/metaphor/dist/img/metalab-logo.svg" alt="META+LAB Logo">
+                  <div class="mb-2 mb-md-0">
+                    <a href="//www.metalab.csun.edu" target="csun">metalab.csun.edu</a>
+                  </div>
+              </div>
+              <div class="offset-md-6 col-md-4 align-self-center">
+                  <div class="text-center text-md-right">
+                    Explore. Learn. Go Beyond.
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+    <footer class="footer-metaphor">
+        <div class="container">
+            <div class="row">
+            <div class="col-12 col-md-5">
+                <div class="row mb-3 mb-md-0">
+                <div class="col-12 col-md-3">
+                    <img class="d-block mx-auto mx-md-0 img-fluid footer-metaphor__emblem mb-3 mb-md-0" src="//s3-us-west-2.amazonaws.com/csun-metalab/metaphor/dist/img/csun-emblem.svg" alt="CSUN Emblem">
+                </div>
+                <div class="col-12 col-md-9">
+                    <h6>META+LAB </h6>
+                    <div>
+                    &copy; California State University, Northridge <br> 
+                    18111 Nordhoff Street, Northridge, CA 91330 <br>
+                    Phone: <a href="#">(818) 677-1200</a> / <a href="//www.csun.edu/contact" target="csun">Contact Us</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-7">
+                <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="mb-2 mb-lg-1">
+                    <a href="//www.csun.edu/emergency/" target="csun">Emergency Information</a>
+                    </div>
+                    <div  class="mb-2 mb-lg-1">
+                    <a href="//www.csun.edu/afvp/university-policies-procedures/"  target="csun">University Policies & Procedures</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 pl-0">
+                    <div class="mb-2 mb-lg-1">
+                    <a href="//www.csun.edu/sites/default/files/900-12.pdf" target="csun">Terms and Conditions for Use</a>
+                    </div>
+                    <div class="mb-2 mb-lg-1">
+                    <a href="//www.csun.edu/sites/default/files/500-8025.pdf" target="csun">Privacy Policy</a>  
+                    </div>
+                    <div class="mb-2 mb-lg-1">
+                    <a href="//www.csun.edu/it/document-viewers" target="csun">Document Reader</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 px-0">
+                    <div>
+                    <a href="//www2.calstate.edu" target="csun">California State University</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="footer-metaphor__subfooter mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img class="footer-metaphor__logo mb-3" src="//s3-us-west-2.amazonaws.com/csun-metalab/metaphor/dist/img/metalab-logo.svg" alt="META+LAB Logo">
+                        <div class="mb-2 mb-md-0">
+                            <a href="//www.metalab.csun.edu" target="csun">metalab.csun.edu</a>
+                        </div>
+                    </div>
+                    <div class="offset-md-6 col-md-4 align-self-center">
+                        <div class="text-center text-md-right">
+                            Explore. Learn. Go Beyond.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 ## Rise Arrow
 
-The central graphic element around the CSUN concept is the Rise Arrow. This arrow helps visualize the key message: Through CSUN, we all rise. 
+A central graphic element around the CSUN concept is the Rise Arrow. This arrow helps visualize the key message: Through CSUN, we all rise. 
 
 <br>
 
@@ -477,9 +615,47 @@ The <strong class="bg-info">.badge-outline-{theme-color}</strong> is custom to m
     <span class="badge badge-outline-dark">Dark Badge</span>
 
 
-## Icon Library - Font Awesome
+## Font Awesome
 
-<i class="fas fa-user"></i>
+### Installation
+
+To utilize the font awesome icon library, add it to your project by either:
+
+Adding the following &lt;script&gt; to the &lt;head&gt; of your document:
+
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+
+Or, import the fontawesome package that was installed as a dependency when Metaphor was installed:
+    
+    import FontAwesome from '@fortawesome/fontawesome-free/js/all.js';
+
+Or, if working in Vue.js, you may utilize the [official Font Awesome Vue.js component](https://fontawesome.com/how-to-use/on-the-web/using-with/vuejs). The advantage of this method? "Explicitly selecting icons offers the advantage of only bundling the icons that you use in your final bundled file. This allows us to subset Font Awesome's thousands of icons to just the small number that are normally used".
+
+### Usage
+
+After installing font awesome, you have access to most [solid icons](https://fontawesome.com/icons?d=gallery&amp;s=solid&amp;m=free), [regular icons](https://fontawesome.com/icons?d=gallery&amp;s=regular&amp;m=free)  and [brand icons](https://fontawesome.com/icons?d=gallery&amp;s=brands&amp;m=free) (you are limited to only the free icons). You can easily place icons on your site and modify their [size](https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons), [animate](https://fontawesome.com/how-to-use/on-the-web/styling/animating-icons) them, [flip/rotate](https://fontawesome.com/how-to-use/on-the-web/styling/rotating-icons) them, and more. Please see the [font awesome documentation](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use) for more information.
+
+<div>
+    <i class="fas fa-user"></i>
+    <i class="far fa-user"></i>
+    <i class="fab fa-facebook fa-2x"></i>
+    <i class="fas fa-user fa-3x fa-flip-vertical"></i>
+    <i class="fas fa-3x fa-spinner fa-spin"></i>
+    <span class="fa-3x">
+        <span class="fa-layers fa-fw">
+            <i class="fas fa-calendar"></i>
+            <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3" style="font-weight:900">27</span>
+        </span>
+    </span>
+    <span class="fa-stack fa-2x">
+        <i class="fas fa-camera fa-stack-1x"></i>
+        <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
+    </span>
+</div>
+
+    <i class="fas fa-user"></i>
+    <i class="far fa-user"></i>
+    <i class="fab fa-facebook"></i>
 
 ## Datepicker
 
