@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Metaphor V2',
     description: 'A CSUN-Branded Theme for Bootstrap 4',
-    base: '/docs/',
+    base: '/metaphorV2/',
     head: [
         ['script', { src: 'https://code.jquery.com/jquery-3.3.1.min.js' }],
         ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js' }],
