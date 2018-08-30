@@ -24,7 +24,7 @@
           :item="actionLink"
         />
       </p> -->
-        <a class="btn btn-primary mb-5" href="/documentation/">
+        <a class="btn btn-primary mb-5" href="/metaphorV2/documentation/">
           Learn More
         </a>
     </div>

@@ -541,6 +541,20 @@ A central graphic element around the CSUN concept is the Rise Arrow. This arrow 
 
 Add a class of .hr-metaphor to an &lt;hr&gt; element
 
+<hr class="hr-metaphor">
+
+To adjust the width of the &lt;hr&gt; element, apply the bootstrap width classes of <strong class="bg-info">.w-25</strong>, <strong class="bg-info">.w-50</strong>, <strong class="bg-info">.w-75</strong>
+
+<hr class="hr-metaphor w-50">
+
+To adjust the placement of the &lt;hr&gt; element, combine the bootstrap width classes with <strong class="bg-info">.ml-0</strong> or <strong class="bg-info">.mr-0</strong>
+
+<hr class="hr-metaphor w-25 mr-0">
+
+    <hr class="hr-metaphor">
+    <hr class="hr-metaphor w-50">
+    <hr class="hr-metaphor w-25 mr-0">
+
 ## Badges
 
 The <strong class="bg-info">.badge-outline-{theme-color}</strong> is custom to metaphor. The default badge is a standard bootstrap component (with metaphor colors applied instead of the default bootstrap colors).
