@@ -13,10 +13,12 @@ module.exports = {
         repo: 'andrewMETALAB/metaphorV2',
         nav: [
             { text: 'Home', link: '/' },
+            { text: 'Getting Started', link: '/getting-started/' },
             { text: 'Documentation', link: '/documentation/' }
         ],
         sidebar: [
             ['/', 'Home'],
+            ['/getting-started/', 'Getting Started'],
             ['/documentation/', 'Documentation']
         ] 
     }

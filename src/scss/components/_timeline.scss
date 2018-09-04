@@ -17,9 +17,9 @@
 			content: " ";
 			position: absolute;
 			top: 50%;
-			left: -21px;
-			width: 11px;
-			height: 11px;
+			left: -1.9rem;
+			width: .7rem;
+			height: .7rem;
 			transform: translateY(-50%);
 			border: 2px solid $primary;
 			border-radius: 11px;
@@ -28,7 +28,7 @@
 
 		&--align-top {
 			&:before {
-				top: .75rem;
+				top: 1.25rem;
 			}
 		}
 	}
@@ -47,7 +47,7 @@
 		.timeline-header,
 		.timeline-event {
 			&:before {
-				top: .75rem;
+				top: 1.25rem;
 			}
 
 			&--align-center {

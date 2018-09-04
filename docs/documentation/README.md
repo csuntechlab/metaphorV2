@@ -1,4 +1,4 @@
-# Documentation 
+# Base Settings 
 
 ## Fonts & Typography
 
@@ -19,84 +19,34 @@ ATCOverlook is the default font. You can make use of it's variants with **&lt;st
 
 To use <span class="font-display">FSLola Bold</span>, add a class of **.font-display** in your markup, or utilize the variable **$font-family-display** in your Sass files.  
 
-## Timeline
+## Font Awesome
 
-A custom component intended to be used to display the passage of time.
+After [installing font awesome](/metaphorV2/getting-started/#font-awesome-installation), you have access to most [solid icons](https://fontawesome.com/icons?d=gallery&amp;s=solid&amp;m=free), [regular icons](https://fontawesome.com/icons?d=gallery&amp;s=regular&amp;m=free)  and [brand icons](https://fontawesome.com/icons?d=gallery&amp;s=brands&amp;m=free) (you are limited to only the free icons). You can easily place icons on your site and modify their [size](https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons), [animate](https://fontawesome.com/how-to-use/on-the-web/styling/animating-icons) them, [flip/rotate](https://fontawesome.com/how-to-use/on-the-web/styling/rotating-icons) them, and more. Please see the [font awesome documentation](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use) for more information.
 
-<div class="row"> 
-<div class="col-sm-6">
-<h3 class="mb-3">Timeline (default)</h3>
-<ul class="timeline">
-<li class="timeline-header">
-<strong>May 2016 - Steven Kitzes - MS Computer Science</strong><br>
-<a href=""><em>A Comparative Study of Asynchronous Performance in NodeJS</em></a><br>
-<span>Committee Chair: A. Kaplan. Committee Members: J. Weigley and S. Fitzgerald.</span>
-</li>
-
-
-<li class="timeline-event">
-<strong>12/12/12 - Really Long Title For This Research Publicaiton</strong>
-</li>
-
-<li>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti culpa laudantium veniam nisi ea, maiores impedit nulla facilis beatae provident, sint expedita. Ab dolore sed sit nesciunt maiores doloribus minima! Ab consectetur adipisicing elit.
-</li>
-
-<li class="timeline-event">Thing Another Thing  <br>thing foo bar<br>another another foobar</li>
-
-<li class="timeline-event timeline-event--align-top">Thing Another Thing thing <br>foo bar<br>another another foobar</li>
-</ul>
-</div>
-<div class="col-sm-6">
-<h3 class="mb-3">Timeline (dots top aligned)</h3>
-
-<ul class="timeline timeline--align-top">
-<li class="timeline-header">
-<strong>May 2016 - Steven Kitzes - MS Computer Science</strong><br>
-<a href=""><em>A Comparative Study of Asynchronous Performance in NodeJS</em></a><br>
-<span>Committee Chair: A. Kaplan. Committee Members: J. Weigley and S. Fitzgerald.</span>
-</li>
-
-
-<li class="timeline-event">
-<strong>12/12/12 - Really Long Title For This Research Publicaiton</strong>
-</li>
-
-<li>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti culpa laudantium veniam nisi ea, maiores impedit nulla facilis beatae provident, sint expedita. Ab dolore sed sit nesciunt maiores doloribus minima! Ab consectetur adipisicing elit.
-</li>
-
-<li class="timeline-event">Thing Another Thing  <br>thing foo bar<br>another another foobar</li>
-
-<li class="timeline-event timeline-event--align-center">Thing Another Thing thing <br>foo bar<br>another another foobar</li>
-</ul>
-</div>
+<div>
+    <i class="fas fa-user"></i>
+    <i class="far fa-user"></i>
+    <i class="fab fa-facebook fa-2x"></i>
+    <i class="fas fa-user fa-3x fa-flip-vertical"></i>
+    <i class="fas fa-3x fa-spinner fa-spin"></i>
+    <span class="fa-3x">
+        <span class="fa-layers fa-fw">
+            <i class="fas fa-calendar"></i>
+            <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3" style="font-weight:900">27</span>
+        </span>
+    </span>
+    <span class="fa-stack fa-2x">
+        <i class="fas fa-camera fa-stack-1x"></i>
+        <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
+    </span>
 </div>
 
-    //timeline (default)
-    <ul class="timeline">
-    <li class="timeline-header"><strong>What</strong> Lorem Ipsum Foobar</li>
-    <li class="timeline-event"><strong>Thing</strong> Another Thing thing <br>foo bar</li> 
-    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti culpa laudantium veniam nisi ea, maiores impedit nulla facilis beatae provident, sint expedita. Ab dolore sed sit nesciunt maiores doloribus minima! Ab consectetur adipisicing elit. </li> 
-    <li class="timeline-event timeline-event--align-top"><strong>That</strong> Metaphor Foo Thing</li> 
-    </ul>
+    <i class="fas fa-user"></i>
+    <i class="far fa-user"></i>
+    <i class="fab fa-facebook"></i>
 
-    //timeline (dots top aligned)
-    <ul class="timeline timeline--align-top">
-    <li class="timeline-header"><strong>What</strong> Lorem Ipsum Foobar</li>
-    <li class="timeline-event"><strong>Thing</strong> Another Thing thing <br>foo bar</li> 
-    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti culpa laudantium veniam nisi ea, maiores impedit nulla facilis beatae provident, sint expedita. Ab dolore sed sit nesciunt maiores doloribus minima! Ab consectetur adipisicing elit. </li> 
-    <li class="timeline-event timeline-event--align-center"><strong>That</strong> Metaphor Foo Thing</li> 
-    </ul>
+# Modified Bootstrap Components 
 
-By default, the dots associated with each timeline item are centered. If you want the dots to be top-aligned, you can add a modifier class of <strong class="bg-info">.timeline--align-top</strong> to the parent &lt;ul&gt;. You can also override the dot alignment of any individual item by adding the following modifier classes to the &lt;ul&gt; element:
-
-<strong class="bg-info">
-.timeline-event--align-top<br> 
-.timeline-event--align-center<br>
-.timeline-header--align-top<br>
-.timeline-event--align-center
-</strong>
 
 ## Navbar
 
@@ -118,7 +68,7 @@ Just like the standard bootrap navbar, you can add class of <strong class="bg-in
 <span class="sr-only">CSUN Logo</span>
 
 <span class="navbar-brand__subbrand">
-    MetaLab
+    Sample
     <small>Beta</small>
 </span>
 
@@ -140,7 +90,7 @@ Just like the standard bootrap navbar, you can add class of <strong class="bg-in
 <span class="sr-only">CSUN Logo</span>
 
 <span class="navbar-brand__subbrand">
-MetaLab
+Sample
 <small>Beta</small>
 </span>
 
@@ -162,7 +112,7 @@ MetaLab
 <span class="sr-only">CSUN Logo</span>
 
 <span class="navbar-brand__subbrand">
-MetaLab
+Sample
 <small>Beta</small>
 </span>
 
@@ -184,7 +134,7 @@ MetaLab
 <span class="sr-only">CSUN Logo</span>
 
 <span class="navbar-brand__subbrand">
-MetaLab
+Sample
 <small>Beta</small>
 </span>
 
@@ -205,7 +155,7 @@ MetaLab
       <a class="navbar-brand" href="#">
         <span class="sr-only">CSUN Logo</span>
         <span class="navbar-brand__subbrand">
-          MetaLab
+          Sample
           <small>Beta</small>
         </span>
       </a>
@@ -386,6 +336,87 @@ You can add a class of <strong class="bg-info">.nav-pills</strong> to the parent
         <li class="nav-item flex-fill text-center"> <a class="nav-link" href="">Link</a> </li> 
     </ul>
 
+# Custom Components
+
+## Timeline
+
+A custom component intended to be used to display the passage of time.
+
+<div class="row"> 
+<div class="col-sm-6">
+<h3 class="mb-3">Timeline (default)</h3>
+<ul class="timeline">
+<li class="timeline-header">
+<strong>May 2016 - Steven Kitzes - MS Computer Science</strong><br>
+<a href=""><em>A Comparative Study of Asynchronous Performance in NodeJS</em></a><br>
+<span>Committee Chair: A. Kaplan. Committee Members: J. Weigley and S. Fitzgerald.</span>
+</li>
+
+
+<li class="timeline-event">
+<strong>12/12/12 - Really Long Title For This Research Publicaiton</strong>
+</li>
+
+<li>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti culpa laudantium veniam nisi ea, maiores impedit nulla facilis beatae provident, sint expedita. Ab dolore sed sit nesciunt maiores doloribus minima! Ab consectetur adipisicing elit.
+</li>
+
+<li class="timeline-event">Thing Another Thing  <br>thing foo bar<br>another another foobar</li>
+
+<li class="timeline-event timeline-event--align-top">Thing Another Thing thing <br>foo bar<br>another another foobar</li>
+</ul>
+</div>
+<div class="col-sm-6">
+<h3 class="mb-3">Timeline (dots top aligned)</h3>
+
+<ul class="timeline timeline--align-top">
+<li class="timeline-header">
+<strong>May 2016 - Steven Kitzes - MS Computer Science</strong><br>
+<a href=""><em>A Comparative Study of Asynchronous Performance in NodeJS</em></a><br>
+<span>Committee Chair: A. Kaplan. Committee Members: J. Weigley and S. Fitzgerald.</span>
+</li>
+
+
+<li class="timeline-event">
+<strong>12/12/12 - Really Long Title For This Research Publicaiton</strong>
+</li>
+
+<li>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti culpa laudantium veniam nisi ea, maiores impedit nulla facilis beatae provident, sint expedita. Ab dolore sed sit nesciunt maiores doloribus minima! Ab consectetur adipisicing elit.
+</li>
+
+<li class="timeline-event">Thing Another Thing  <br>thing foo bar<br>another another foobar</li>
+
+<li class="timeline-event timeline-event--align-center">Thing Another Thing thing <br>foo bar<br>another another foobar</li>
+</ul>
+</div>
+</div>
+
+    //timeline (default)
+    <ul class="timeline">
+        <li class="timeline-header"><strong>What</strong> Lorem Ipsum Foobar</li>
+        <li class="timeline-event"><strong>Thing</strong> Another Thing thing <br>foo bar</li> 
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti culpa laudantium veniam nisi ea, maiores impedit nulla facilis beatae provident, sint expedita. Ab dolore sed sit nesciunt maiores doloribus minima! Ab consectetur adipisicing elit. </li> 
+        <li class="timeline-event timeline-event--align-top"><strong>That</strong> Metaphor Foo Thing</li> 
+    </ul>
+
+    //timeline (dots top aligned)
+    <ul class="timeline timeline--align-top">
+        <li class="timeline-header"><strong>What</strong> Lorem Ipsum Foobar</li>
+        <li class="timeline-event"><strong>Thing</strong> Another Thing thing <br>foo bar</li> 
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti culpa laudantium veniam nisi ea, maiores impedit nulla facilis beatae provident, sint expedita. Ab dolore sed sit nesciunt maiores doloribus minima! Ab consectetur adipisicing elit. </li> 
+        <li class="timeline-event timeline-event--align-center"><strong>That</strong> Metaphor Foo Thing</li> 
+    </ul>
+
+By default, the dots associated with each timeline item are centered. If you want the dots to be top-aligned, you can add a modifier class of <strong class="bg-info">.timeline--align-top</strong> to the parent &lt;ul&gt;. You can also override the dot alignment of any individual item by adding the following modifier classes to the &lt;ul&gt; element:
+
+<strong class="bg-info">
+.timeline-event--align-top<br> 
+.timeline-event--align-center<br>
+.timeline-header--align-top<br>
+.timeline-event--align-center
+</strong>
+
 ## Footer
 
 A CSUN and META+LAB branded footer component.
@@ -555,6 +586,17 @@ To adjust the placement of the &lt;hr&gt; element, combine the bootstrap width c
     <hr class="hr-metaphor w-50">
     <hr class="hr-metaphor w-25 mr-0">
 
+
+## Datepicker
+
+Include the datepicker.js file (included with MetaphorV2). Initialize with <code>$('.date').datepicker();</code> The datepicker is accessible. 
+
+<div class="form-group">
+    <label for="date1">Chose a Date:</label>
+    <input class="date form-control" id="date1" type="text" placeholder="mm/dd/yy" title="format: mm/dd/yy"/>
+</div>
+
+
 ## Badges
 
 The <strong class="bg-info">.badge-outline-{theme-color}</strong> is custom to metaphor. The default badge is a standard bootstrap component (with metaphor colors applied instead of the default bootstrap colors).
@@ -631,55 +673,3 @@ The <strong class="bg-info">.badge-outline-{theme-color}</strong> is custom to m
     <span class="badge badge-outline-warning">Metaphor</span>
     <span class="badge badge-outline-light">Light Badge</span>
     <span class="badge badge-outline-dark">Dark Badge</span>
-
-
-## Font Awesome
-
-### Installation
-
-To utilize the font awesome icon library, add it to your project by either:
-
-Adding the following &lt;script&gt; to the &lt;head&gt; of your document:
-
-    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
-
-Or, import the fontawesome package that was installed as a dependency when Metaphor was installed:
-    
-    import FontAwesome from '@fortawesome/fontawesome-free/js/all.js';
-
-Or, if working in Vue.js, you may utilize the [official Font Awesome Vue.js component](https://fontawesome.com/how-to-use/on-the-web/using-with/vuejs). The advantage of this method? "Explicitly selecting icons offers the advantage of only bundling the icons that you use in your final bundled file. This allows us to subset Font Awesome's thousands of icons to just the small number that are normally used".
-
-### Usage
-
-After installing font awesome, you have access to most [solid icons](https://fontawesome.com/icons?d=gallery&amp;s=solid&amp;m=free), [regular icons](https://fontawesome.com/icons?d=gallery&amp;s=regular&amp;m=free)  and [brand icons](https://fontawesome.com/icons?d=gallery&amp;s=brands&amp;m=free) (you are limited to only the free icons). You can easily place icons on your site and modify their [size](https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons), [animate](https://fontawesome.com/how-to-use/on-the-web/styling/animating-icons) them, [flip/rotate](https://fontawesome.com/how-to-use/on-the-web/styling/rotating-icons) them, and more. Please see the [font awesome documentation](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use) for more information.
-
-<div>
-    <i class="fas fa-user"></i>
-    <i class="far fa-user"></i>
-    <i class="fab fa-facebook fa-2x"></i>
-    <i class="fas fa-user fa-3x fa-flip-vertical"></i>
-    <i class="fas fa-3x fa-spinner fa-spin"></i>
-    <span class="fa-3x">
-        <span class="fa-layers fa-fw">
-            <i class="fas fa-calendar"></i>
-            <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-8 down-3" style="font-weight:900">27</span>
-        </span>
-    </span>
-    <span class="fa-stack fa-2x">
-        <i class="fas fa-camera fa-stack-1x"></i>
-        <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
-    </span>
-</div>
-
-    <i class="fas fa-user"></i>
-    <i class="far fa-user"></i>
-    <i class="fab fa-facebook"></i>
-
-## Datepicker
-
-Include the datepicker.js file (included with MetaphorV2). Initialize with <code>$('.date').datepicker();</code> The datepicker is accessible. 
-
-<div class="form-group">
-    <label for="date1">Chose a Date:</label>
-    <input class="date form-control" id="date1" type="text" placeholder="mm/dd/yy" title="format: mm/dd/yy"/>
-</div>

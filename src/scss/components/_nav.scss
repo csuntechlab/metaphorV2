@@ -134,8 +134,8 @@
 .flex-column.nav-pills .nav-link.active, 
 .flex-column.nav-pills .show>.nav-link {
 	&:before {
-		left: 10px;
-		width: calc(100% - 10px);
+		left: .5rem;
+		width: calc(100% - .5rem);
 		border-radius: .25rem;
 	}
 }
@@ -165,8 +165,8 @@
     .nav-pills.flex#{$infix}-column .show>.nav-link { 
 		&:before {
 			@include media-breakpoint-up(sm) {
-				left: 10px;
-				width: calc(100% - 10px);
+				left: .5rem;
+				width: calc(100% - .5rem);
 				border-radius: .25rem;
 			}
 		}

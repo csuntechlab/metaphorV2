@@ -65,7 +65,6 @@
  *	The grid container set aria-activedescendant to the id of the currently focused gridcell.
  *
  */
-
 (function () {
 	"use strict";
 	if (typeof Date.dp_locales === 'undefined') {
@@ -239,7 +238,7 @@
 		'</a>'
 	];
 	var datepickerCalendar = [
-		'<div class="datepicker-calendar" id="datepicker-calendar-CALENDARID" aria-hidden="false">',
+		'<div class="datepicker-calendar fade" id="datepicker-calendar-CALENDARID" aria-hidden="false">',
 		'	<div class="datepicker-month-wrap">',
 		'		<div class="datepicker-month-fast-next float-right" role="button" aria-labelledby="datepicker-bn-fast-next-label-CALENDARID" tabindex="0"><i class="fas fa-angle-double-right"></i></div>',
 		'		<div class="datepicker-month-next float-right" role="button" aria-labelledby="datepicker-bn-next-label-CALENDARID" tabindex="0"><i class="fas fa-angle-right"></i></div>',
@@ -386,7 +385,7 @@
 			this.$calendar.css({position: 'relative', left: '0px'});
 			this.initializeDate();
 		} else {
-			this.$calendar.css({display: 'none'});
+			// this.$calendar.css({display: 'none'});
 			this.$target.parent().after(this.$calendar);
 			this.hide(!this.options.gainFocusOnConstruction);
 		}
@@ -2235,7 +2234,8 @@
 
 		// show the dialog
 		this.$calendar.attr('aria-hidden', 'false');
-		this.$calendar.fadeIn();
+		// this.$calendar.fadeIn();
+		this.$calendar.addClass("show");
 		$('.datepicker-calendar').trigger('ab.datepicker.opened', [self.id]);
 	} // end show()
 
@@ -2300,7 +2300,8 @@
 			// hide the dialog
 			this.$calendar.removeClass('above below');
 			this.$calendar.attr('aria-hidden', 'true');
-			this.$calendar.fadeOut();
+			// this.$calendar.fadeOut();
+			this.$calendar.removeClass("show")
 			$('.datepicker-calendar').trigger('ab.datepicker.closed', [self.id]);
 			// set focus on the focus target
 			if (!omitSettingFocus) {
@@ -2317,13 +2318,16 @@
 	Datepicker.prototype.greyOut = function(on) {
 		var $overlay = $('#datepicker-overlay');
 		if ($overlay.length == 0 && on) {
-			$('body').append('<div id="datepicker-overlay" class="datepicker-overlay"></div>');
+			$('body').append('<div id="datepicker-overlay" class="datepicker-overlay fade"></div>');
 			$overlay = $('#datepicker-overlay');
 		}
 		if (on) {
-			$overlay.fadeIn(500);
+			// $overlay.fadeIn(500);
+			$overlay.addClass("show");
+			
 		} else {
-			$overlay.fadeOut(500);
+			// $overlay.fadeOut(500);
+			$overlay.removeClass("show");
 		}
 	} // end greyOut()
 
