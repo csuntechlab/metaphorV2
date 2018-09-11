@@ -16,7 +16,7 @@
       @click="toggleSidebar(false)"
     ></div>
 
-    <div class="container-fluid">
+    <main class="container-fluid">
       <div class="row">
 
         <Sidebar
@@ -57,7 +57,7 @@
           />
         </Page>
         </div>
-    </div>
+    </main>
 
     <Footer></Footer>
 
