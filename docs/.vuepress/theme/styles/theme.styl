@@ -112,25 +112,94 @@ ul, ol
 strong
   font-weight 600
 
-h1, h2, h3, h4, h5, h6
+// h1, h2, h3, h4, h5, h6
   // font-weight 600
   // line-height 1.25
-  .content:not(.custom) > &
+  // .content:not(.custom) > &
     // margin-top (0.5rem - $navbarHeight)
     // padding-top ($navbarHeight + 1rem)
-    margin-top 4rem
-    margin-bottom 2rem
-    &:first-child
+    // margin-top 4rem
+    // margin-bottom 2rem
+    // &:first-child
       // margin-top -1.5rem
-      margin-bottom 3rem
-      border-bottom: 1px solid #eaecef
-      + p, + pre, + .custom-block
-        margin-top 2rem
-  &:hover .header-anchor
-    opacity: 1
+      // margin-bottom 3rem
+      // border-bottom: 1px solid #eaecef
+      // + p, + pre, + .custom-block
+      //   margin-top 2rem
+  // &:hover .header-anchor
+  //   opacity: 1
 
-h1 
+.container-fluid 
+  overflow hidden
+
+.content h1 
   color #d22030
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin-bottom: 50px;
+  margin-top: 115px;
+  background: #d22030;
+  color white
+  padding-left: 10px;
+  position relative
+  left: -70px;
+  padding-left: 40px;
+  border-radius: 5px 0 0 5px;
+
+  @media (max-width 1060px)
+    left -15px
+    padding-left 15px
+
+  @media (max-width 860px)
+    left 0
+
+  @media (max-width 767px)
+    background transparent 
+    color #d22030
+    padding-left 0
+    border-bottom 2px solid #d22030
+    border-radius 0
+
+
+.content h1:after 
+  content: " ";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #d22030;
+  top: 0;
+  right: -100%;
+
+  @media (max-width 767px)
+    display none
+
+.content h2 
+  margin-top: 70px;
+  margin-bottom: 30px;
+  border-top: 1px solid #eaecef;
+  padding-top: 70px;
+
+.content h3,
+.content h4 
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border-top: 1px solid #eaecef;
+  padding-top: 40px;
+
+
+.content h1 + h2 
+  border-top: 0 none;
+  margin-top: 0;
+  padding-top: 0;
+
+
+.content pre 
+  margin-top 50px
+  margin-bottom 35px
+
+.content p
+  margin-bottom: 2rem;
+
 
 // h1
 //   font-size 2.2rem
@@ -142,16 +211,21 @@ h1
 
 // h3
 //   font-size 1.35rem
-
-a.header-anchor
+.content:not(.custom) a.header-anchor
   font-size 0.85em
   float left
   margin-left -0.87em
   padding-right 0.23em
   margin-top 0.125em
   opacity 0
+
   &:hover
     text-decoration none
+    opacity 1
+    color #d22030
+
+.content:not(.custom) h1 a.header-anchor:hover
+    color #901621
 
 code, kbd, .line-number
   font-family source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace

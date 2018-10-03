@@ -8,7 +8,7 @@ It is necessary to read and undertand the Bootstrap 4 docs in order to work with
 
 Metaphor is available as an NPM package:
 
-    npm install metaphor-theme --save
+    npm install metaphor-theme
 
 When this command is run, the custom Metaphor SCSS, CSS, & JS files will be installed into your project's <code>node_modules</code> directory, along with  Bootstrap 4 and FontAwesome (because they are dependencies of Metaphor). 
 
@@ -20,7 +20,7 @@ Once you have downloaded the package, you can import Metaphor's Sass code into y
 
 This should be the first import on your main Sass file. It will install Bootsrap 4 along with all of the custom Metaphor styles and components. You will now have access to all of the Bootsrap 4 Sass variables, mixins, and functions. 
 
-### Font Awesome Installation
+#### Font Awesome Installation
 
 To utilize the font awesome icon library, add it to your project by either:
 

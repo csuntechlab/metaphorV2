@@ -21,7 +21,8 @@ To use <span class="font-display">FSLola Bold</span>, add a class of **.font-dis
 
 ## Font Awesome
 
-After [installing font awesome](/metaphorV2/getting-started/#font-awesome-installation), you have access to most [solid icons](https://fontawesome.com/icons?d=gallery&amp;s=solid&amp;m=free), [regular icons](https://fontawesome.com/icons?d=gallery&amp;s=regular&amp;m=free)  and [brand icons](https://fontawesome.com/icons?d=gallery&amp;s=brands&amp;m=free) (you are limited to only the free icons). You can easily place icons on your site and modify their [size](https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons), [animate](https://fontawesome.com/how-to-use/on-the-web/styling/animating-icons) them, [flip/rotate](https://fontawesome.com/how-to-use/on-the-web/styling/rotating-icons) them, and more. Please see the [font awesome documentation](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use) for more information.
+After [installing font awesome](/getting-started/#font-awesome-installation), you have access to most [solid icons](https://fontawesome.com/icons?d=gallery&amp;s=solid&amp;m=free), [regular icons](https://fontawesome.com/icons?d=gallery&amp;s=regular&amp;m=free)  and [brand icons](https://fontawesome.com/icons?d=gallery&amp;s=brands&amp;m=free) (you are limited to only the free icons). You can easily place icons on your site and modify their [size](https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons), [animate](https://fontawesome.com/how-to-use/on-the-web/styling/animating-icons) them, [flip/rotate](https://fontawesome.com/how-to-use/on-the-web/styling/rotating-icons) them, and more. Please see the [font awesome documentation](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use) for more information.
+
 
 <div>
     <i class="fas fa-user"></i>
@@ -44,6 +45,62 @@ After [installing font awesome](/metaphorV2/getting-started/#font-awesome-instal
     <i class="fas fa-user"></i>
     <i class="far fa-user"></i>
     <i class="fab fa-facebook"></i>
+
+## Colors
+
+The metaphor color pallete is based off of the CSUN Design Guidelines.
+
+<div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+<div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+<div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+<div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+<div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+<div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+<div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+<div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+<div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+<div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+
+    <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+    <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+    <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+    <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+    <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+    <div class="p-3 mb-2 bg-info text-white">.bg-info</div>
+    <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+    <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+    <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+    <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+
+<br>
+<div class="py-2 text-primary">.text-primary</div>
+<div class="py-2 text-secondary">.text-secondary</div>
+<div class="py-2 text-success">.text-success</div>
+<div class="py-2 text-danger">.text-danger</div>
+<div class="py-2 text-warning">.text-warning</div>
+<div class="py-2 text-info">.text-info</div>
+<div class="py-2 text-light bg-dark">.text-light</div>
+<div class="py-2 text-dark">.text-dark</div>
+<div class="py-2 text-body">.text-body</div>
+<div class="py-2 text-muted">.text-muted</div>
+<div class="py-2 text-white bg-dark">.text-white</div>
+<div class="py-2 text-black-50">.text-black-50</div>
+<div class="py-2 text-white-50 bg-dark">.text-white-50</div>
+
+    <div class="text-primary">.text-primary</div>
+    <div class="text-secondary">.text-secondary</div>
+    <div class="text-success">.text-success</div>
+    <div class="text-danger">.text-danger</div>
+    <div class="text-warning">.text-warning</div>
+    <div class="text-info">.text-info</div>
+    <div class="text-light bg-dark">.text-light</div>
+    <div class="text-dark">.text-dark</div>
+    <div class="text-body">.text-body</div>
+    <div class="text-muted">.text-muted</div>
+    <div class="text-white bg-dark">.text-white</div>
+    <div class="text-black-50">.text-black-50</div>
+    <div class="text-white-50 bg-dark">.text-white-50</div>
+
 
 # Modified Bootstrap Components 
 
@@ -336,6 +393,28 @@ You can add a class of <strong class="bg-info">.nav-pills</strong> to the parent
         <li class="nav-item flex-fill text-center"> <a class="nav-link" href="">Link</a> </li> 
     </ul>
 
+
+## Breadcrumb
+
+The breadcrumb component from bootstrap has been slightly modified. Please note that the font-awesome home icon is optional. 
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </nav>
+
+
 # Custom Components
 
 ## Timeline
@@ -344,7 +423,7 @@ A custom component intended to be used to display the passage of time.
 
 <div class="row"> 
 <div class="col-sm-6">
-<h3 class="mb-3">Timeline (default)</h3>
+<h5 class="mb-4">Timeline (default)</h5>
 <ul class="timeline">
 <li class="timeline-header">
 <strong>May 2016 - Steven Kitzes - MS Computer Science</strong><br>
@@ -367,7 +446,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti culpa laudant
 </ul>
 </div>
 <div class="col-sm-6">
-<h3 class="mb-3">Timeline (dots top aligned)</h3>
+<h5 class="mb-4">Timeline (dots top aligned)</h5>
 
 <ul class="timeline timeline--align-top">
 <li class="timeline-header">
@@ -555,47 +634,25 @@ A CSUN and META+LAB branded footer component.
         </div>
     </footer>
 
-## Rise Arrow
 
-A central graphic element around the CSUN concept is the Rise Arrow. This arrow helps visualize the key message: Through CSUN, we all rise. 
+## Rounded Buttons
+
+The <strong class="bg-info">.btn-rounded</strong> class is custom to metaphor. You can add this class to any <a href="https://getbootstrap.com/docs/4.1/components/buttons/" target="bootstrap">bootstrap button</a> in order to make it rounded.
 
 <br>
+<button type="button" class="btn btn-rounded btn-primary">Rounded Button</button>
+<button type="button" class="btn btn-lg btn-rounded btn-dark">Rounded Button</button>
+<button type="button" class="btn btn-sm btn-rounded btn-warning">Rounded Button</button>
+<button type="button" class="btn btn-rounded btn-outline-primary">Rounded Button</button>
+<button type="button" class="btn btn-rounded btn-lg btn-outline-dark">Rounded Button</button>
+<button type="button" class="btn btn-rounded btn-sm btn-outline-success">Rounded Button</button>
 
-<div class="rise-arrow">
-</div>
-<br>
-
-    <div class="rise-arrow">
-    </div>
-
-## Horizontal Line
-
-Add a class of .hr-metaphor to an &lt;hr&gt; element
-
-<hr class="hr-metaphor">
-
-To adjust the width of the &lt;hr&gt; element, apply the bootstrap width classes of <strong class="bg-info">.w-25</strong>, <strong class="bg-info">.w-50</strong>, <strong class="bg-info">.w-75</strong>
-
-<hr class="hr-metaphor w-50">
-
-To adjust the placement of the &lt;hr&gt; element, combine the bootstrap width classes with <strong class="bg-info">.ml-0</strong> or <strong class="bg-info">.mr-0</strong>
-
-<hr class="hr-metaphor w-25 mr-0">
-
-    <hr class="hr-metaphor">
-    <hr class="hr-metaphor w-50">
-    <hr class="hr-metaphor w-25 mr-0">
-
-
-## Datepicker
-
-Include the datepicker.js file (included with MetaphorV2). Initialize with <code>$('.date').datepicker();</code> The datepicker is accessible. 
-
-<div class="form-group">
-    <label for="date1">Chose a Date:</label>
-    <input class="date form-control" id="date1" type="text" placeholder="mm/dd/yy" title="format: mm/dd/yy"/>
-</div>
-
+    <button type="button" class="btn btn-rounded btn-primary">Rounded Button</button>
+    <button type="button" class="btn btn-lg btn-rounded btn-dark">Rounded Button</button>
+    <button type="button" class="btn btn-sm btn-rounded btn-warning">Rounded Button</button>
+    <button type="button" class="btn btn-rounded btn-outline-primary">Rounded Button</button>
+    <button type="button" class="btn btn-rounded btn-lg btn-outline-dark">Rounded Button</button>
+    <button type="button" class="btn btn-rounded btn-sm btn-outline-success">Rounded Button</button>
 
 ## Badges
 
@@ -673,3 +730,47 @@ The <strong class="bg-info">.badge-outline-{theme-color}</strong> is custom to m
     <span class="badge badge-outline-warning">Metaphor</span>
     <span class="badge badge-outline-light">Light Badge</span>
     <span class="badge badge-outline-dark">Dark Badge</span>
+
+
+
+## Rise Arrow
+
+A central graphic element around the CSUN concept is the Rise Arrow. This arrow helps visualize the key message: Through CSUN, we all rise. 
+
+<br>
+
+<div class="rise-arrow">
+</div>
+<br>
+
+    <div class="rise-arrow">
+    </div>
+
+## Horizontal Line
+
+Add a class of .hr-metaphor to an &lt;hr&gt; element
+
+<hr class="hr-metaphor">
+
+To adjust the width of the &lt;hr&gt; element, apply the bootstrap width classes of <strong class="bg-info">.w-25</strong>, <strong class="bg-info">.w-50</strong>, <strong class="bg-info">.w-75</strong>
+
+<hr class="hr-metaphor w-50">
+
+To adjust the placement of the &lt;hr&gt; element, combine the bootstrap width classes with <strong class="bg-info">.ml-0</strong> or <strong class="bg-info">.mr-0</strong>
+
+<hr class="hr-metaphor w-25 mr-0">
+
+    <hr class="hr-metaphor">
+    <hr class="hr-metaphor w-50">
+    <hr class="hr-metaphor w-25 mr-0">
+
+
+## Datepicker
+
+Include the datepicker.js file (included with MetaphorV2). Initialize with <code>$('.date').datepicker();</code> The datepicker is accessible. 
+
+<div class="form-group">
+    <label for="date1">Chose a Date:</label>
+    <input class="date form-control" id="date1" type="text" placeholder="mm/dd/yy" title="format: mm/dd/yy"/>
+</div>
+
