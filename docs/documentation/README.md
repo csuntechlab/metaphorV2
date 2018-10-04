@@ -737,13 +737,99 @@ The <strong class="bg-info">.badge-outline-{theme-color}</strong> is custom to m
 
 A central graphic element around the CSUN concept is the Rise Arrow. This arrow helps visualize the key message: Through CSUN, we all rise. 
 
-<br>
-
-<div class="rise-arrow">
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-3">
+        <div class="rise-arrow">
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3">
+        <div class="rise-arrow rise-arrow--2tone">
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3">
+        <div class="rise-arrow rise-arrow--2tone">
+        </div>
+        <div class="rise-arrow rise-arrow--middle">
+        </div>
+        <div class="rise-arrow rise-arrow--bottom">
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3">
+        <div class="rise-arrow rise-arrow--2tone">
+        </div>
+        <div class="rise-arrow rise-arrow--2tone">
+        </div>
+        <div class="rise-arrow rise-arrow--2tone">
+        </div>
+        <div class="rise-arrow rise-arrow--middle">
+        </div>
+        <div class="rise-arrow rise-arrow--bottom">
+        </div>
+    </div>
 </div>
-<br>
 
-    <div class="rise-arrow">
+    //rise arrow
+    <div class="rise-arrow"></div>
+
+    //rise arrow 2-tone
+    <div class="rise-arrow rise-arrow--2tone"></div>
+
+    //3-d rise arrow
+    <div class="rise-arrow rise-arrow--2tone"></div>
+    <div class="rise-arrow rise-arrow--middle"></div>
+    <div class="rise-arrow rise-arrow--bottom"></div>
+
+    //taller rise arrow (you can make it as tall as you want)
+    <div class="rise-arrow rise-arrow--2tone"></div>
+    <div class="rise-arrow rise-arrow--2tone"></div>
+    <div class="rise-arrow rise-arrow--2tone"></div>
+    <div class="rise-arrow rise-arrow--middle"></div>
+    <div class="rise-arrow rise-arrow--bottom"></div>
+
+The rise arrow can easily be made bigger or smaller by adjusting the font-size of it's parent. (This was achieved by building the rise arrow with only ems and percentages).
+
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-3 text-center">
+        <div style="font-size:2.5rem;">
+            <div class="rise-arrow">
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-2 text-center">
+        <div style="font-size:1rem;">
+            <div class="rise-arrow rise-arrow--2tone">
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-5 text-center d-none d-sm-block">
+        <div style="font-size:4rem">
+            <div class="rise-arrow rise-arrow--2tone">
+            </div>
+            <div class="rise-arrow rise-arrow--middle">
+            </div>
+            <div class="rise-arrow rise-arrow--bottom">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div style="font-size:2.5rem;">
+        <div class="rise-arrow">
+        </div>
+    </div>
+
+    <div style="font-size:1rem;">
+        <div class="rise-arrow rise-arrow--2tone">
+        </div>
+    </div>
+
+    <div style="font-size:4rem">
+        <div class="rise-arrow rise-arrow--2tone">
+        </div>
+        <div class="rise-arrow rise-arrow--middle">
+        </div>
+        <div class="rise-arrow rise-arrow--bottom">
+        </div>
     </div>
 
 ## Horizontal Line

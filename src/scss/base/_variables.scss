@@ -1,6 +1,10 @@
+//METAPHOR VARIABLES
+
 $red: #d22030;
 $cinnabar: #e64b36;
+$carmine: #B11F23;
 $secondary-red: $cinnabar;
+$dark-red: $carmine;
 $sea-green: #82cec9;
 $periwinkle: #92a1cd;
 $golden-yellow: #fdbf56;
@@ -12,6 +16,8 @@ $medium-gray: #a9aba9; //medium gray / cool gray 6
 $light-gray: #bec6c3; //light gray / Pantone 441
 $dark-gray: #3d454d; //decided on by Tiffany and Andrew
 $green: #4fAf47;
+
+//BOOTSTRAP OVERRIDES
 
 $primary:       $red;
 $secondary:     $light-gray;
