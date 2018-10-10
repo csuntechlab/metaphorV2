@@ -2,7 +2,7 @@
 
 Metaphor V2 is a CSUN-branded theme built ontop of [Bootstrap 4](https://getbootstrap.com/).
 
-It is necessary to read and undertand the Bootstrap 4 docs in order to work with Metaphor.
+It is necessary to read and understand the Bootstrap 4 docs in order to work with Metaphor.
 
 ## Download
 

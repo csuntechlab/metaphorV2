@@ -53,23 +53,23 @@ main
   z-index 10
   // margin 0
   top $navbarHeight
-  left 0
+  left -1px
   bottom 0
   box-sizing border-box
   border-right 1px solid $borderColor
   overflow-y auto
   padding-top 2rem
 
-.sidebar > ul.nav-metaphor {
-  border-left: 0 none;
+.sidebar > ul.nav-metaphor.flex-column .nav-item {
+  margin-left: 0;
 }
 
 .content:not(.custom)
   // @extend $wrapper
   > *:first-child
     margin-top $navbarHeight
-  a:hover
-    text-decoration underline
+  // a:hover
+  //   text-decoration underline
   p.demo
     padding 1rem 1.5rem
     border 1px solid #ddd
