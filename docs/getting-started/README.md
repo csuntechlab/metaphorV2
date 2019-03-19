@@ -4,6 +4,12 @@ Metaphor V2 is a CSUN-branded theme built ontop of [Bootstrap 4](https://getboot
 
 It is necessary to read and understand the Bootstrap 4 docs in order to work with Metaphor.
 
+## CDN
+
+Metaphor is available via CDN. Just copy this code into the `<head>` of your website.
+
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/csun-metalab/metaphor/dist/css/metaphor-v2.min.css">
+
 ## Download
 
 Metaphor is available as an NPM package:
