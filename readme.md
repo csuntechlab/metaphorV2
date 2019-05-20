@@ -25,3 +25,6 @@ There is also ALL of the bootstrap documentation included in the /docs directory
 4. Run `gulp watch`
 4. Look at `index.html` (ideally with a [local development webserver](https://askubuntu.com/questions/377389/how-to-easily-start-a-webserver-in-any-folder))
 
+## License
+The project is open source and under the [GNU General Public License v3+](https://www.gnu.org/licenses/gpl.html). A copy can be found in the `COPYING` file.
+
