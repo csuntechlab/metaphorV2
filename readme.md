@@ -11,41 +11,42 @@ Also included in this repository is the docs for MetaphorV2, which are [served u
  using github pages and powered by [VuePress](https://vuepress.vuejs.org/).
 
 
-
 ## Prerequisites
 
 - This works on Windows, macOS and Linux.
 - Node Package Manager and Gulp are required. Make sure you can run `gulp -v` and `npm -v`.
 - You can get Node at [nodejs.org](https://nodejs.org), then install gulp using `npm install gulp-cli -g`
 
-## Getting started - editing the booststrap theme itself
+
+## Getting started 
+
+### Editing the booststrap theme itself
 
 1. Clone this repo
 2. Run `npm install`
 3. Run `gulp watch` (and then leave that terminal window reserved for the gulp watcher to run)
 4. Look at `index.html` (ideally with a [local development webserver](https://askubuntu.com/questions/377389/how-to-easily-start-a-webserver-in-any-folder))
-5. Edit any of the scss or js files within the `src` directory as you see fit.
+5. Edit any of the scss or js files within the `src` directory as desired
 
-## Getting started - how to publish an update of the theme to NPM
+
+### Publishing an update of the theme to NPM
 
 1. Make any desired changes to the theme (see above instructions)
 2. Update the version number in `package.json`
 3. Commit changes to github
 4. Run `npm publish`
 
-## Getting started - editing the docs (which are powered by VuePress)
+
+### Editing the docs (which are powered by VuePress)
 
 1. Run `npm run docs:dev`
 2. Edit any of the README.md files within the `docs` directory as you see fit.
 
 
-## Getting started - publishing updates to the docs
+### Publishing updates to the docs
 
 1. Run `npm run docs:build`
 2. Run `bash deploy.sh`
-
-
-
 
 
 ## License
