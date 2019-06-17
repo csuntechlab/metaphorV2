@@ -47,8 +47,7 @@ Also included in this repository is the docs for MetaphorV2, which are [served u
 
 ### Publishing updates to the docs
 
-1. Run `npm run docs:build`
-2. Run `bash deploy.sh`
+1. Run `bash deploy.sh`
 
 
 ## License
