@@ -5,10 +5,10 @@ This is a custom Bootstrap 4 theme with CSUN branding.
 
 ## What this project does
 
-This repository includes a project structure with a build script that builds a custom CSS version of Bootstrap 4, using Gulp. You can
-clone this repository, run the Gulp task and go right into modifying variables and adding styles. There's also an HTML file that contains
-a neatly organized collection of Bootstrap components that fit a 1920x1080 display, so you can instantly see the outcome. 
-There is also ALL of the bootstrap documentation included in the /docs directory. As you make changes to bootstrap default styles, you can see the changes take affect on various pages in the docs. 
+This repository includes a project structure with a build script that builds a custom CSS version of Bootstrap 4 using Gulp.
+
+Also included in this repository is the docs for MetaphorV2, which are [served up here](https://csun-metalab.github.io/metaphorV2/)
+ using github pages and powered by [VuePress](https://vuepress.vuejs.org/).
 
 
 
@@ -18,12 +18,35 @@ There is also ALL of the bootstrap documentation included in the /docs directory
 - Node Package Manager and Gulp are required. Make sure you can run `gulp -v` and `npm -v`.
 - You can get Node at [nodejs.org](https://nodejs.org), then install gulp using `npm install gulp-cli -g`
 
-## Getting started
+## Getting started - editing the booststrap theme itself
 
-2. Clone this repo
-3. Run `npm install`
-4. Run `gulp watch`
+1. Clone this repo
+2. Run `npm install`
+3. Run `gulp watch` (and then leave that terminal window reserved for the gulp watcher to run)
 4. Look at `index.html` (ideally with a [local development webserver](https://askubuntu.com/questions/377389/how-to-easily-start-a-webserver-in-any-folder))
+5. Edit any of the scss or js files within the `src` directory as you see fit.
+
+## Getting started - how to publish an update of the theme to NPM
+
+1. Make any desired changes to the theme (see above instructions)
+2. Update the version number in `package.json`
+3. Commit changes to github
+4. Run `npm publish`
+
+## Getting started - editing the docs (which are powered by VuePress)
+
+1. Run `npm run docs:dev`
+2. Edit any of the README.md files within the `docs` directory as you see fit.
+
+
+## Getting started - publishing updates to the docs
+
+1. Run `npm run docs:build`
+2. Run `bash deploy.sh`
+
+
+
+
 
 ## License
 The project is open source and under the [GNU General Public License v3+](https://www.gnu.org/licenses/gpl.html). A copy can be found in the `COPYING` file.
