@@ -498,7 +498,7 @@ By default, the dots associated with each timeline item are centered. If you wan
 
 ## Footer
 
-A CSUN and META+LAB branded footer component.
+A CSUN branded footer component.
 
 <footer class="footer-metaphor">
   <div class="container">
@@ -548,23 +548,6 @@ A CSUN and META+LAB branded footer component.
       </div>
     </div>
   </div>
-  <div class="footer-metaphor__subfooter mt-5">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-2">
-                  <img class="footer-metaphor__logo mb-3" src="//s3-us-west-2.amazonaws.com/csun-metalab/metaphor/dist/img/metalab-logo.svg" alt="META+LAB Logo">
-                  <div class="mb-2 mb-md-0">
-                    <a href="//www.metalab.csun.edu" target="csun">metalab.csun.edu</a>
-                  </div>
-              </div>
-              <div class="offset-md-6 col-md-4 align-self-center">
-                  <div class="text-center text-md-right">
-                    Explore. Learn. Go Beyond.
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
 </footer>
 
     <footer class="footer-metaphor">
@@ -613,23 +596,6 @@ A CSUN and META+LAB branded footer component.
                 </div>
                 </div>
             </div>
-            </div>
-        </div>
-        <div class="footer-metaphor__subfooter mt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2">
-                        <img class="footer-metaphor__logo mb-3" src="//s3-us-west-2.amazonaws.com/csun-metalab/metaphor/dist/img/metalab-logo.svg" alt="META+LAB Logo">
-                        <div class="mb-2 mb-md-0">
-                            <a href="//www.metalab.csun.edu" target="csun">metalab.csun.edu</a>
-                        </div>
-                    </div>
-                    <div class="offset-md-6 col-md-4 align-self-center">
-                        <div class="text-center text-md-right">
-                            Explore. Learn. Go Beyond.
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </footer>

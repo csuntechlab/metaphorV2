@@ -25,8 +25,9 @@ Also included in this repository is the docs for MetaphorV2, which are [served u
 1. Clone this repo
 2. Run `npm install`
 3. Run `gulp watch` (and then leave that terminal window reserved for the gulp watcher to run)
-4. Look at `index.html` (ideally with a [local development webserver](https://askubuntu.com/questions/377389/how-to-easily-start-a-webserver-in-any-folder))
-5. Edit any of the scss or js files within the `src` directory as desired
+4. If you encounter any errors, consider changing your version of node (nvm is a useful tool for this.) Version 8.10.0 is confirmed to work. 
+5. Look at `index.html` (ideally with a [local development webserver](https://askubuntu.com/questions/377389/how-to-easily-start-a-webserver-in-any-folder))
+6. Edit any of the `.scss` or `.js` files within the `src` directory as desired
 
 
 ### Publishing an update of the theme to NPM
@@ -40,7 +41,8 @@ Also included in this repository is the docs for MetaphorV2, which are [served u
 ### Editing the docs (which are powered by VuePress)
 
 1. Run `npm run docs:dev`
-2. Edit any of the README.md files within the `docs` directory as you see fit.
+2. If you encounter any errors, consider changing your version of node (nvm is a useful tool for this.) Version 8.10.0 is confirmed to work. 
+3. Edit any of the `README.md` files within the `docs` directory as you see fit.
 
 
 ### Publishing updates to the docs
